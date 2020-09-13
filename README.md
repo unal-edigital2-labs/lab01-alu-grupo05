@@ -6,7 +6,7 @@ Integrantes
 
 * 
 
-*
+*Julian David Pulido Castañeda
 
 * Esteban Ladino Fajardo
 
