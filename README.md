@@ -4,11 +4,10 @@ Integrantes
 
 * 
 
-* 
+* JOae ALVARO CELIS
 
 *Julian David Pulido Castañeda
 
 * Esteban Ladino Fajardo
 
 escribir  la memoria de laboratorio 
-
