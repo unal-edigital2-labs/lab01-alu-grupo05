@@ -3,10 +3,10 @@
 module sum4b(init, xi, yi,co,sal);
 
   input init;
-  input [2 :0] xi;
-  input [2 :0] yi;
+  input [3 :0] xi;
+  input [3 :0] yi;
   output co;
-  output [3:0] sal;
+  output [3 :0] sal;
   
   
   wire [4:0] st;

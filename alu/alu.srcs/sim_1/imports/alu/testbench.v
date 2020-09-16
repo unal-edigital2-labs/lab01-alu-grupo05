@@ -33,7 +33,7 @@ module testbench;
 
 	// Outputs
 	wire [0:6] sseg;
-	wire [3:0] an;
+	wire an;
 
 	// Instantiate the Unit Under Test (UUT)
 	alu uut (
