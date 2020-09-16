@@ -2,12 +2,13 @@
 ## Introducción
 Integrantes
 
-* 
 
-* JOae ALVARO CELIS
+* Jose Alvaro Celis
 
-*Julian David Pulido Castañeda
+* Julian David Pulido Castañeda
 
 * Esteban Ladino Fajardo
+
+* Julian Escobar Jamioy
 
 escribir  la memoria de laboratorio 
