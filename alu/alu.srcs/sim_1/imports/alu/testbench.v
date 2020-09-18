@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 10ns / 1ns
 
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -34,6 +34,10 @@ module testbench;
 	// Outputs
 	wire [0:6] sseg;
 	wire an;
+	
+	// senales de prueba
+	
+	wire [3:0] int_bcd;
 
 	// Instantiate the Unit Under Test (UUT)
 	alu uut (
@@ -43,17 +47,26 @@ module testbench;
 		.sseg(sseg), 
 		.an(an), 
 		.clk(clk), 
-		.rst(rst)
+		.rst(rst),
+    // senales de prueba
+        .int_bcd(int_bcd)		
+		
 	);
-
+    
+    
+    
+    
 
 	initial begin
 		// Initialize Inputs
 		opcode = 0;
 		clk = 0;
 		rst = 1;
-		portA=5;
-		portB=3;
+		portA=0;
+		portB=0;
+	
+	
+    
 		
 		// Wait 100 ns for global reset to finish
 		#10;
@@ -61,13 +74,18 @@ module testbench;
 		rst = 0;
 		// Add stimulus here
 		
-		#50 opcode = 0;
+		for(portB=0;portB<8;portB=portB+1) begin
 		
-		#50 opcode = 1;
+		  if(portB==7) portA=portA+1; 
 		
-		#50 opcode = 2;
+            #50 opcode =opcode+ 1;
+            #50 opcode =opcode+ 1;
+            #50 opcode =opcode+ 1;
+            #50 opcode=opcode+ 1;
+         end
+        
+         
 		
-		#50 opcode = 3;
 		
 	end
    

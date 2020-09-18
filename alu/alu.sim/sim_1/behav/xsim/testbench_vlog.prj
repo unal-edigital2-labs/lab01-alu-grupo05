@@ -3,6 +3,7 @@ verilog xil_defaultlib  \
 "../../../../alu.srcs/sources_1/imports/src/display/BCDtoSSeg.v" \
 "../../../../alu.srcs/sources_1/imports/alu/alu.v" \
 "../../../../alu.srcs/sources_1/imports/src/multiplicacion/multiplicador.v" \
+"../../../../alu.srcs/sources_1/new/restador.v" \
 "../../../../alu.srcs/sources_1/imports/src/sum4bcc/sum4b.v" \
 "../../../../alu.srcs/sim_1/imports/alu/testbench.v" \
 

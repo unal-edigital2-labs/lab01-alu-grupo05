@@ -6,11 +6,11 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/display/BCDtoSSeg.v" Line 1. Module BCDtoSSeg doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.sum4b
 Compiling module xil_defaultlib.multiplicador
+Compiling module xil_defaultlib.restador
 Compiling module xil_defaultlib.BCDtoSSeg
 Compiling module xil_defaultlib.alu
 Compiling module xil_defaultlib.testbench

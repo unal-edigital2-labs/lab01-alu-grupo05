@@ -3,8 +3,9 @@
 Nov  6 2019
 21:42:20
 /home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sim_1/imports/alu/testbench.v,1600294886,verilog,,,,testbench,,,,,,,,
-/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/alu/alu.v,1600294829,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/multiplicacion/multiplicador.v,,alu,,,,,,,,
-/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/display/BCDtoSSeg.v,1600290167,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/alu/alu.v,,BCDtoSSeg,,,,,,,,
-/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/multiplicacion/multiplicador.v,1600290167,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/sum4bcc/sum4b.v,,multiplicador,,,,,,,,
-/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/sum4bcc/sum4b.v,1600290167,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sim_1/imports/alu/testbench.v,,sum4b,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sim_1/imports/alu/testbench.v,1600379557,verilog,,,,testbench,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/alu/alu.v,1600393836,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/multiplicacion/multiplicador.v,,alu,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/display/BCDtoSSeg.v,1600377943,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/alu/alu.v,,BCDtoSSeg,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/multiplicacion/multiplicador.v,1600375488,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/new/restador.v,,multiplicador,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/sum4bcc/sum4b.v,1600375570,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sim_1/imports/alu/testbench.v,,sum4b,,,,,,,,
+/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/new/restador.v,1600392228,verilog,,/home/esteban/UNAL/AnalogElectrinicsII/labs/lab01-alu-grupo05/alu/alu.srcs/sources_1/imports/src/sum4bcc/sum4b.v,,restador,,,,,,,,

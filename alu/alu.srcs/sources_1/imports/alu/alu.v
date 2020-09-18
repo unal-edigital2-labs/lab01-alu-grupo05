@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 10ns / 1ns
 
 
 module alu(
@@ -7,6 +7,10 @@ module alu(
     input [1:0] opcode,
     output [0:6] sseg,
     output wire an,
+    
+    //Senal prueba 
+    output reg [3:0] int_bcd,
+    
     input clk,
     input rst
  );
@@ -53,7 +57,7 @@ end
 always @(*) begin
 	case(opcode) 
 		2'b00: int_bcd <=sal_suma;
-		2'b01: int_bcd <=sal_resta;
+		2'b01: int_bcd <={1'b0,sal_resta[2:0]};
 		2'b10: int_bcd <=sal_mult;
 		2'b11: int_bcd <=sal_div;
 	default:
@@ -67,6 +71,8 @@ end
 
 sum4b sum(. init(init_suma),.xi({1'b0,portA}), .yi({1'b0,portB}),.sal(sal_suma));
 multiplicador mul ( .MR(portA), .MD(portB), .init(init_mult),.clk(clk), .pp(sal_mult));
+restador res(.clk(clk),.A(portA),.B(portB),.INIT(init_resta),.C(sal_resta));
+
 BCDtoSSeg dp( .BCD(int_bcd),.SSeg(sseg));
 
 // adicone los dos bloques que hacen flata la resta y división
