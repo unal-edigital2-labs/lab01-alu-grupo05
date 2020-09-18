@@ -12,3 +12,5 @@ Integrantes
 * Julian Escobar Jamioy
 
 escribir  la memoria de laboratorio 
+
+## Bloque restador
