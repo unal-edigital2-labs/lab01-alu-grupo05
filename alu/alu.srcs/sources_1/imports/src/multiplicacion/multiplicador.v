@@ -1,4 +1,4 @@
-`timescale 10ns / 1ns
+timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -72,12 +72,6 @@ end
 // FSM 
 parameter START =0,  CHECK =1, ADD =2, SHIFT =3, END1 =4;
 
-
-always @(MR,MD) begin
-status =START;
-end
-
-
 always @(posedge clk) begin
 	case (status)
 	START: begin
@@ -121,9 +115,7 @@ always @(posedge clk) begin
 		rst =0;
 		sh =0;
 		add =0;
-		
-		
-		
+		status =START;
 	end
 	 default:
 		status =START;
