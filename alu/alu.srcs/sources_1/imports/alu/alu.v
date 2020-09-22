@@ -6,10 +6,10 @@ module alu(
     input [2:0] portB,
     input [1:0] opcode,
     output [0:6] sseg,
-    output wire an,
+    output wire [7:0] an,
     
     //Senal prueba 
-    output reg [3:0] int_bcd,
+    //output reg [3:0] int_bcd,
     
     input clk,
     input rst
@@ -21,14 +21,7 @@ wire [3:0] sal_resta;
 wire [3:0] sal_div;
 wire [5:0] sal_mult;
 
-assign an=0;
-assign AN=1;
-assign AN1=1;
-assign AN2=1;
-assign AN3=1;
-assign AN4=1;
-assign AN5=1;
-assign AN6=1;
+assign an=8'b1111_1110;
 
 // Declaración de las entradas init de cada bloque 
 reg [3:0] init; 
@@ -77,7 +70,7 @@ end
 //instanciación de los componnetes 
 
 sum4b sum(. init(init_suma),.xi({1'b0,portA}), .yi({1'b0,portB}),.sal(sal_suma));
-multiplicador mul ( .MR(portA), .MD(portB), .init(init_mult),.clk(clk), .pp(sal_mult));
+multiplicador mul (.MR(portA), .MD(portB), .init(init_mult),.clk(clk), .pp(sal_mult));
 restador res(.clk(clk),.A(portA),.B(portB),.INIT(init_resta),.C(sal_resta));
 
 BCDtoSSeg dp( .BCD(int_bcd),.SSeg(sseg));

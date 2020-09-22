@@ -71,7 +71,7 @@ always @(posedge clk) begin
 end
 
 
-always @(A,B) begin
+always @(MR,MD) begin
 	
 status =START;
 end

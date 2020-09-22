@@ -37,7 +37,7 @@ module testbench;
 	
 	// senales de prueba
 	
-	wire [3:0] int_bcd;
+	//wire [3:0] int_bcd;
 
 	// Instantiate the Unit Under Test (UUT)
 	alu uut (
@@ -47,9 +47,9 @@ module testbench;
 		.sseg(sseg), 
 		.an(an), 
 		.clk(clk), 
-		.rst(rst),
+		.rst(rst)
     // senales de prueba
-        .int_bcd(int_bcd)		
+      //  .int_bcd(int_bcd)		
 		
 	);
     
