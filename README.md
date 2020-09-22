@@ -1,5 +1,5 @@
 # lab01 : Unidad de suma, resta, multiplicación, división y visualización BCD
-## Introducción
+
 Integrantes
 
 
@@ -7,15 +7,32 @@ Integrantes
 
 * Julian David Pulido Castañeda
 
-* Esteban Ladino Fajardo
-
 * Julian Escobar Jamioy
 
-escribir  la memoria de laboratorio 
+* Esteban Ladino Fajardo
 
-## Módulo restador
 
-La descripción de hardware del módulo restador está localizada en ./alu/alu.srcs/sources_1/new/restador.v. Se optó por dejarlo pararamentrizado y las entradas son el *clk* (que no se utilizó), el minuendo *A*, es sustraendo *B* y la diferencia *C* que es de 1 bit más que sus demás operadores. La entrada *INIT* permite indicar en qué momento que realiza la operación. A continuación se encuentra la descripción de harware en verilog.
+
+## Introducción
+
+Con el objetivo de incursionar en el mundo de los procesadores, se plantea la implementación de una *alu* con tres operaciones básicas: suma, resta y multiplicación. Cada operación se activa con un *opecode* específico y el resultado correspondiente se visualiza en un display de 7 segmentos de la targeta de desarrollo *nexys A7*. El módulo a diseñar completamente es el restador, los restantes solo se deben modificar. 
+
+
+## Descripción de módulos
+
+A continuación se describen los trés módulo que componen la alu.
+
+### Módulo sumador
+
+### Módulo restador
+
+Su diagrama estructural es:
+
+
+![fds](./fig/diaEstRes.png)
+
+
+La descripción de hardware del módulo restador está localizada en ./alu/alu.srcs/sources_1/new/restador.v. Se optó por dejarlo parametrizado y las entradas son el *clk* (que no se utilizó), el minuendo *A*, es sustraendo *B* y la diferencia *C* que es de 1 bit más que sus demás operadores. La entrada *INIT* permite indicar en qué momento que realiza la operación. A continuación se encuentra la descripción de harware en verilog.
 
 
 ``` verilog
@@ -55,9 +72,12 @@ always@(*) begin
 endmodule
 
 ```
-## Módulo de simulación testbench
 
-Este módulo se puede encontrar en ./alu/alu.srcs/sim_1/imports/alu/testbench.v. Al comienzo se declaran los registros y wires necesarios para realizar la instanciación del módulo top *alu.v*. A continuación se muestra:
+### Módulo de Multiplicación
+
+## Simulación
+
+El archivo de simulación se puede encontrar en ./alu/alu.srcs/sim_1/imports/alu/testbench.v. Al comienzo se declaran los registros y wires necesarios para realizar la instanciación del módulo top *alu.v*. A continuación se muestra:
 
 ```verilog
 
@@ -130,4 +150,6 @@ Para realizar la simulación de manera automática, se opta por realizar un for 
 
 ```
 
-En este caso, se espera que `portB` varie desde 0 hasta 111 (0 a 7 DEC) mientras que `portA` se aumenta en 1 de forma gradual cada vez que `portB` llega al máximo valor. La estructura del for se hace de tal manera que sea un ciclo limitado por el tiempo de simulación, debido a que `portB` no puede ser mayor o igual a 8 . Además #x, significa que se espera x veces las unidades de tiempo colocadas en *\`timescale unidades de tiempo/ precisión* que en nuestro caso revisando el archivo fuente está como *\`timescale 10ns / 1ns*. Por último, nuestro reloj se genera en `always #1 clk = ~clk`.
+En este caso, se espera que `portB` varie desde 0 hasta 111 mientras que `portA` se aumenta en 1 de forma gradual cada vez que `portB` llega al máximo valor. La estructura del for hace que sea un ciclo limitado por el tiempo de simulación, debido a que `portB` no puede ser mayor o igual a 8 . Además #x, significa que se espera x veces las unidades de tiempo colocadas en *\`timescale unidades de tiempo/ precisión* que en nuestro caso revisando el archivo fuente está como *\`timescale 10ns / 1ns*. Por último, nuestro reloj se genera en `always #1 clk = ~clk`.
+
+## Implementación
