@@ -21,7 +21,14 @@ wire [3:0] sal_resta;
 wire [3:0] sal_div;
 wire [5:0] sal_mult;
 
-assign an=1;
+assign an=0;
+assign AN=1;
+assign AN1=1;
+assign AN2=1;
+assign AN3=1;
+assign AN4=1;
+assign AN5=1;
+assign AN6=1;
 
 // Declaración de las entradas init de cada bloque 
 reg [3:0] init; 
