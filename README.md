@@ -154,6 +154,30 @@ En este caso, se espera que `portB` varie desde 0 hasta 111 mientras que `portA`
 
 ## Implementación
 
+
+
+Salida tomada con el osciloscopio 
+
+
+![DIAGRAMA1](/docs/figure/prueva 15ms.png )
+
+Para reiniciar el ciclo
+
+
+```verilog
+
+ if(contador >=((frecuencia*20)/1000)) // Se reinicia en 20 ms
+//	begin
+//		contador <= 0;
+//	end
+
+
+```
+
+Salida tomada con el osciloscopio   
+
+![DIAGRAMA1](/docs/figure/prueva2ms.png )
+
 ## El  funcionamiento del ultrasonido
 
 (1)	Usando disparador (trigger) se  crean pulso de al menos 10us de señal de alto nivel
