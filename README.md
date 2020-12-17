@@ -153,3 +153,15 @@ Para realizar la simulación de manera automática, se opta por realizar un for 
 En este caso, se espera que `portB` varie desde 0 hasta 111 mientras que `portA` se aumenta en 1 de forma gradual cada vez que `portB` llega al máximo valor. La estructura del for hace que sea un ciclo limitado por el tiempo de simulación, debido a que `portB` no puede ser mayor o igual a 8 . Además #x, significa que se espera x veces las unidades de tiempo colocadas en *\`timescale unidades de tiempo/ precisión* que en nuestro caso revisando el archivo fuente está como *\`timescale 10ns / 1ns*. Por último, nuestro reloj se genera en `always #1 clk = ~clk`.
 
 ## Implementación
+
+## El  funcionamiento del ultrasonido
+
+(1)	Usando disparador (trigger) se  crean pulso de al menos 10us de señal de alto nivel
+(2)	El Módulo envía automáticamente ocho a 40 kHz y detecta si hay un señal de pulso de vuelta.  
+
+
+
+
+
+
+
